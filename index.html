@@ -6,48 +6,116 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="container">
-            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="logo" class="logo" width="56" height="56"/>
-            <ul class="nav-items">
-                <li>Home</li>
-                <li>Our Profile</li>
-                <li>Achievement</li>
-                <li>Message Us</li>
-            </ul>
-        </nav>
-        <hr>
-        <header>
-            <h1>Hi Kamal, Welcome To Website</h1>
-            <p>Ini adalah website latihan pertama</p>
+        <!-- Navigation Header -->
+        <header class="header-navigation">
+            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="revou-logo" class="logo"/>
+            <div class="navigation">
+              <button>Home</button>
+              <button>Our Profile</button>
+              <button>Achievement</button>
+              <button>Message Us</button>
+            </div>
         </header>
-        <hr>
-        <h3>Our Facilitation</h3>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Hi! Welcome to My Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="slideshow">
+                <img
+                class="img-slideshow"
+                src="https://source.unsplash.com/random/1366x578?landscape&sig=1"
+                />
+                <img
+                class="img-slideshow"
+                src="https://source.unsplash.com/random/1366x578?landscape&sig=2"
+                />
+                <img
+                class="img-slideshow"
+                src="https://source.unsplash.com/random/1366x578?landscape&sig=3"
+                />
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Next</button>
+            </div>
+
+        <!-- Contents -->
+        <h2>Our Facilitation</h2>
         <div class="facilitations">
             <div>
-                <div class="circle"></div>
-                <h4>Professional Teacher</h4>
+                <div class="circle" style="background-image: url(https://source.unsplash.com/rReG42Hkqo4);"
+                >
+            </div>
+                <h4>Professional<br>Teacher</h4>
             </div>
             <div>
-                <div class="circle"></div>
+                <div class="circle" style="background-image: url(https://source.unsplash.com/Azy79tSoB_A);"
+                >
+            </div>
                 <h4>Sportfield</h4>
             </div>
             <div>
-                <div class="circle"></div>
+                <div class="circle" style="background-image: url(https://source.unsplash.com/PDRFeeDniCk);"
+                >
+            </div>
                 <h4>Classroom</h4>
             </div>
         </div>
         <hr>
+
+        <!-- Forms -->
+        <h2>Message Us</h2>
         <main class="content">
-            <div>
-                <h2>Message Us</h2>
-            </div>
-            <div>
-                
-            </div>
+            <form>
+                <div class="form">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>
+                                <input type="text" id="full-name" placeholder="Nama">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal</td>
+                            <td>:</td>
+                            <td>
+                                <input type="date" id="birth-date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="lk" name="gender" value="Laki-Laki"><label for="lk">Laki-Laki</label>
+                                <input type="radio" id="pr" name="gender" value="Perempuan"><label for="pr">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td>
+                                <textarea id="messages" name="messages" placeholder="Pesan"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="button" id="btn" value="Submit"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="output-table">
+                    <p class="output" id="current-date"></p><br>
+                    <p class="output" id="sender-full-name"></p>
+                    <p class="output" id="sender-birth-date"></p>
+                    <p class="output" id="sender-gender"></p>
+                    <p class="output" id="sender-messages"></p>
+                </div>
+            </form>
         </main>
-        <hr>
+
+        <!-- Footer -->
         <footer class="footer">
             <p>Created By KamalMY</p>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

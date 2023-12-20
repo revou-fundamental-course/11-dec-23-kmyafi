@@ -28,8 +28,10 @@ const btn1 = document.getElementById('btn');
 function validateForm() {
     if (document.getElementById('lk').checked) {
         var gender = document.getElementById('lk').value;
-    } else{
+    } else if (document.getElementById('pr').checked) {
         var gender = document.getElementById('pr').value;
+    } else {
+        var gender = "";
     }
 
     const name = document.getElementById('full-name').value;

@@ -122,23 +122,23 @@ body {
 }
 
 .content {
+    flex-direction: row;
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
     padding-top: 24px;
-    justify-content: space-between;
     border-bottom: 1px solid grey;
-  }
-
-.content > form {
-    display: flex;
-    flex: 50%;
-    word-wrap: break-word;
+    justify-content: space-evenly;
 }
 
+.content form,
+      .content div {
+        width: 100%;
+    }
+
 .content > form {
-    flex-direction: row;
+    display: flex;
     flex: 1;
-    align-content: center;
+    word-wrap: break-word;
 }
 
 .content > form > div > p {
@@ -158,6 +158,7 @@ body {
 
 .output-table {
     width: 100%;
+    height: 80%;
     border: 1px solid black;
     border-radius: 4px;
     padding-left: 12px;

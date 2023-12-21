@@ -2,10 +2,10 @@
 var getName = null;
 
 while (getName === null || !isNaN(getName)){
-  getName = prompt("Tolong masukkan nama Anda? ");
+  getName = prompt("Tolong masukkan nama Anda:");
 
   if (getName === null || !isNaN(getName)){
-    alert("Nama tidak boleh kosong, tolong coba lagi");
+    alert("Nama tidak boleh kosong. Tolong coba lagi");
   }else{
     document.getElementById("user").innerHTML = getName
   }

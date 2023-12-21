@@ -1,3 +1,4 @@
+/*
 var getName = null;
 
 while (getName === null || !isNaN(getName)){
@@ -9,6 +10,7 @@ while (getName === null || !isNaN(getName)){
     document.getElementById("user").innerHTML = getName
   }
 }
+*/
 
 var slideIndex = 1;
 showDivs(slideIndex);

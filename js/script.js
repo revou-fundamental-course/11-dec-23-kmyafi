@@ -1,3 +1,15 @@
+var getName = null;
+
+while (getName === null || !isNaN(getName)){
+  getName = prompt("Tolong masukkan nama Anda? ");
+
+  if (getName === null || !isNaN(getName)){
+    alert("Nama tidak boleh kosong, tolong coba lagi");
+  }else{
+    document.getElementById("user").innerHTML = getName
+  }
+}
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

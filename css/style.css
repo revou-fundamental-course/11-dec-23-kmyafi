@@ -113,11 +113,11 @@ body {
     .facilitations {
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
     .content > form {
         flex-direction: column;
+        width: 100%;
     }
 }
 
@@ -132,9 +132,11 @@ body {
 .content > form {
     display: flex;
     flex: 50%;
+    word-wrap: break-word;
 }
 
-.content > form > div {
+.content > form {
+    flex-direction: row;
     flex: 1;
     align-content: center;
 }
@@ -150,17 +152,18 @@ body {
     font-size: 60%;
  }
 
-.form{
+.form {
     margin-right: 24px;
 }
 
 .output-table {
     width: 100%;
-    height: 75%;
     border: 1px solid black;
     border-radius: 4px;
     padding-left: 12px;
+    padding-right: 12px;
     padding-top: 24px;
+    padding-bottom: 24px;
 }
   
 /* form */

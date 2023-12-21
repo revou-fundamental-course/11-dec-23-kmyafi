@@ -1,4 +1,4 @@
-/*
+// Request username
 var getName = null;
 
 while (getName === null || !isNaN(getName)){
@@ -10,8 +10,8 @@ while (getName === null || !isNaN(getName)){
     document.getElementById("user").innerHTML = getName
   }
 }
-*/
 
+// Auto slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -38,7 +38,7 @@ setInterval(() => {
 
 const btn1 = document.getElementById('btn');
 
-
+// Form query
 function validateForm() {
     if (document.getElementById('lk').checked) {
         var gender = document.getElementById('lk').value;

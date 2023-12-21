@@ -48,6 +48,16 @@ body {
     margin-top: 8px;
 }
 
+.profile {
+    display: flex;
+    justify-content: left;
+}
+.profile-desc {
+    flex-direction: row;
+    display: flex;
+    flex: 50%;
+}
+
 .facilitations {
     display: flex;
     justify-content: space-around;
